@@ -1,13 +1,12 @@
 // imports
-const Stress = require('ddos-stress')
+const Stress = require("ddos-stress");
 
-// data
-const stress = new Stress()
+// instance
+const stress = new Stress();
 
-// methods
-
+// stress
 const sendManyRequest = () => {
-    stress.run("http://localhost:3000/", 8000)
-}
+  stress.run("http://localhost:3000/", 8000);
+};
 
-sendManyRequest()
+sendManyRequest();
